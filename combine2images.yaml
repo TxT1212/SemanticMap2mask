@@ -5,12 +5,14 @@ combineStyle: "image_mask"
 rgb_path: "/media/ezxr/data/tanksandtemples/Barn/images/000001.jpg"
 depth_path: "/media/ezxr/data/tanksandtemples/Barn/masks/000001_mask.png"
 
-image_path: "/media/ezxr/data/Aachen-Day-Night/aachen_parts//f/images/9.jpg"
-mask_path: "/media/ezxr/data/Aachen-Day-Night/aachen_parts//f/masks/9_mask.png"
-image_out_path: "/media/ezxr/data/Aachen-Day-Night/aachen_parts//f/semantic/images_masked/9.png"
-mask_out_path: "/media/ezxr/data/Aachen-Day-Night/aachen_parts//f/semantic/org_binary_mask/9.jpg.png"
-
-
+image_path: "/media/ezxr/data/Aachen-Day-Night/images/db/9.jpg"
+mask_path: "/media/ezxr/data/Aachen-Day-Night/semantic/masks/9_mask.png"
+image_out_path: "/media/ezxr/data/Aachen-Day-Night/semantic/images_masked/9.png"
+mask_out_path: "/media/ezxr/data/Aachen-Day-Night/semantic/org_binary_mask/9.jpg.png"
+mask_erode_out: "/media/ezxr/data/Aachen-Day-Night/semantic/erode_binary_mask/9.jpg.png"
+image_erode_out: "/media/ezxr/data/Aachen-Day-Night/semantic/images_masked/9.png"
+save_rgb_mask: 1
+save_erode_mask: 1
 # rgb_depth
 K: !!opencv-matrix
    rows: 3
@@ -26,3 +28,4 @@ K: !!opencv-matrix
 # image mask
 mask_alpha: 0.5
 mask_value: [2, 4, 9, 12, 17, 72, 102]
+erode_mask_kernel: 9
